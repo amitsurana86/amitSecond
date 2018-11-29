@@ -12,7 +12,7 @@ pipeline {
 							}
 						} 
 					}
-					stage('Second')
+					stage('Second') {
 						{
 							script {
 								echo 'Hello Amit Second'
