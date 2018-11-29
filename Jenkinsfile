@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello, Maven'
-                bat "npm install"
+				script {
+					echo 'Hello, Maven'
+					bat "npm start"
+				}
             }
         }
     }
