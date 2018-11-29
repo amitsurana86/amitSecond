@@ -4,21 +4,17 @@ pipeline {
         stage('Build') {
             steps {
 				parallel {
-					stage('First') {
-						{
+					a: {
 							script {
 								echo 'Hello, Amit First'
 								bat "npm start"
 							}
-						} 
 					}
-					stage('Second') {
-						{
+					b: {
 							script {
 								echo 'Hello Amit Second'
 								bat "npm start"
 							}
-						}
 					}
 				}
             }
