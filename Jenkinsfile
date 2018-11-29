@@ -3,19 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				parallel {
-					a: {
-							script {
-								echo 'Hello, Amit First'
-								bat "npm start"
-							}
-					}
-					b: {
-							script {
-								echo 'Hello Amit Second'
-								bat "npm start"
-							}
-					}
+				script {
+					echo 'Hello, Maven'
+					bat "npm start"
 				}
             }
         }
