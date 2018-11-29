@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
 				parallel {
-					stage('First) {
+					stage('First') {
 						{
 							script {
 								echo 'Hello, Amit First'
@@ -12,7 +12,7 @@ pipeline {
 							}
 						} 
 					}
-					stage('Second)
+					stage('Second')
 						{
 							script {
 								echo 'Hello Amit Second'
